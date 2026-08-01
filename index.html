@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Feliz Día de la Novia ❤️</title>
+  <!-- Vinculación con el CSS separado -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="card">
+    <h1>¡Feliz Día de la Novia!</h1>
+
+    <div class="heart-container">
+      <div class="heart"></div>
+    </div>
+
+    <p class="message">
+      Gracias por iluminar mis días con tu aroma y tu sonrisa ✨
+    </p>
+
+    <button class="btn" onclick="openModal()">Toca para ver tu carta 💌</button>
+  </div>
+
+  <!-- Modal / Ventana Emergente -->
+  <div class="modal-overlay" id="letterModal">
+    <div class="modal-content">
+      <h2>Para el amor de mi vida</h2>
+      <p>
+        Como los jazmines en primavera, haces que todo a mi alrededor sea más lindo y especial.<br><br>
+        <strong>¡Te amo muchísimo! ❤️</strong>
+      </p>
+      <button class="close-btn" onclick="closeModal()">Cerrar</button>
+    </div>
+  </div>
+
+  <script>
+    function openModal() {
+      document.getElementById('letterModal').classList.add('active');
+    }
+
+    function closeModal() {
+      document.getElementById('letterModal').classList.remove('active');
+    }
+  </script>
+</body>
+</html>
